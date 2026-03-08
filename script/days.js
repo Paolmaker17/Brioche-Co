@@ -14,6 +14,11 @@ function nextDay(){
 
 function resetRun() {
     localStorage.removeItem("day")
+
+    d.classList.remove("flip")
+    void d.offsetWidth
+    d.classList.add("flip")
+
     d.textContent=1
     day=1
 }
