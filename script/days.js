@@ -18,6 +18,7 @@ function resetRun() {
     d.classList.remove("flip")
     void d.offsetWidth
     d.classList.add("flip")
+    settingsMenu.style.display = 'none'
 
     d.textContent=1
     day=1
