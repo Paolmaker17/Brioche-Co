@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Tailwind TV Frame</title>
@@ -9,11 +8,10 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="select-none flex items-center justify-center min-h-screen bg-[#f5f5dc]">
 
     <!-- Calendario -->
-    <div class="absolute right-104 z-11 top-4 w-[74px] rounded-xl bg-white shadow-xl">
+    <div class="absolute right-[48%] z-11 top-4 w-[74px] rounded-xl bg-white shadow-xl">
         <div class="absolute -top-1 left-3 w-1.5 h-1.5 bg-neutral-400 rounded-full"></div>
         <div class="absolute -top-1 right-3 w-1.5 h-1.5 bg-neutral-400 rounded-full"></div>
         <div class="bg-gradient-to-b rounded-t-xl from-red-500 to-red-600 text-white text-center py-[3px] text-[9px] font-semibold tracking-[0.15em] uppercase">
@@ -40,7 +38,7 @@
         </div>
     </div>
 
-    <div id="impostazioni" onclick="nextDay()"
+    <div onclick="nextDay()"
         class="
             fixed bottom-4 left-1/2 transform -translate-x-1/2 
             w-52 sm:w-64 
