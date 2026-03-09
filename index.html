@@ -10,7 +10,7 @@
 </head>
 <body class="select-none min-h-screen bg-gradient-to-b from-[#f5f5dc] to-[#B5B5A6] flex flex-col items-center">
 
-    <!-- Muro -->
+    <!-- Muro
     <div class="fixed inset-0 -z-10 pointer-events-none opacity-80">
         <svg width="100%" height="100%" viewBox="0 0 1200 800" preserveAspectRatio="none">
             <defs>
@@ -19,7 +19,6 @@
                     width="140"
                     height="70">
 
-            <!-- row 1 -->
             <path d="
                 M0 0 H140
                 M0 35 H140
@@ -34,7 +33,6 @@
                 stroke-linejoin="round"
                 fill="none"/>
 
-            <!-- row 2 offset -->
             <path d="
                 M-35 35 V70
                 M35 35 V70
@@ -51,7 +49,7 @@
             </defs>
             <rect width="100%" height="100%" fill="url(#brickPattern)"/>
         </svg>
-    </div>
+    </div> -->
 
     <!-- Calendario -->
     <div class="absolute top-6 right-6 z-20 w-[84px] rounded-xl bg-white shadow-xl">
@@ -69,25 +67,25 @@
     </div>
 
     <!-- Contenitore Principale -->
-    <div class="flex items-center justify-center w-full flex-1">
-        <div class="flex gap-12 items-start">
+    <div class="flex items-center justify-center w-full flex gap-12 items-start relative top-5">
 
-            <!-- Grafico Inflazione -->
-            <div class="w-[clamp(500px,40vw,800px)]">
-                <div class="border-2 border-neutral-900 rounded-[22px] bg-gradient-to-b from-neutral-700 to-neutral-900 p-[16px] shadow-[0_20px_70px_rgba(0,0,0,0.9)]">
-                    <div class="rounded-[15px] bg-neutral-800 p-[12px] shadow-inner shadow-black/70">
-                        <div class="aspect-video w-full rounded-[12px] bg-black flex items-center justify-center relative">
-                            <canvas id="marketChart"></canvas>
-                            <div class="text-center absolute top-2 text-green-400 text-xs font-mono tracking-widest">
-                                MARKET TERMINAL
-                            </div>
+        <!-- Grafico Inflazione -->
+        <div class="w-[clamp(500px,30vw,800px)]">
+            <div class="border-2 border-neutral-900 rounded-[22px] bg-gradient-to-b from-neutral-700 to-neutral-900 p-[16px] shadow-[0_20px_70px_rgba(0,0,0,0.9)]">
+                <div class="rounded-[15px] bg-neutral-800 p-[12px] shadow-inner shadow-black/70">
+                    <div class="aspect-video w-full rounded-[12px] bg-black flex items-center justify-center relative">
+                        <canvas id="marketChart"></canvas>
+                        <div class="text-center absolute top-2 text-green-400 text-xs font-mono tracking-widest">
+                            MARKET TERMINAL
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
             <!-- Inventario -->
-            <div class="w-[260px] flex flex-col gap-6">
+            <div class="w-[260px] flex flex-col gap-6 absolute bottom-3 left-3">
                 <div class="border-2 border-neutral-900 rounded-[18px] bg-gradient-to-b from-neutral-700 to-neutral-900 p-[12px] shadow-[0_20px_70px_rgba(0,0,0,0.9)]">
                     <div class="rounded-[12px] bg-neutral-800 p-[12px] shadow-inner shadow-black/70">
                         <div class="text-center text-xs tracking-widest text-neutral-400 mb-3 font-mono">
@@ -140,8 +138,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
     <!-- Menù di Pausa -->
     <div id="settingsMenu" class="hidden absolute inset-0 flex flex-col justify-center items-center gap-4 z-20 bg-black/40 backdrop-blur-sm">
